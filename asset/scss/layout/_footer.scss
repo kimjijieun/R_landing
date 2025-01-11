@@ -1,10 +1,11 @@
-.footer{
+.footer {
     position: sticky;
     bottom: 0;
     width: 100%;
     z-index: 1;
     font-family: $En-font;
-    .common-inner{
+
+    .common-inner {
         display: flex;
         flex-direction: column;
         color: #ecece4;
@@ -12,8 +13,8 @@
         background: #ACB4B8;
         height: 100vh;
     }
-    
-    .profile-wrap{
+
+    .profile-wrap {
         padding: 9vw 9vw 0;
         height: 100%;
         display: flex;
@@ -21,40 +22,52 @@
         justify-content: center;
 
         position: relative;
-        .profile-box{position: relative;}
-        .profile-txt{
+
+        @include mobile {
+            padding: 9vw 4vw 0;
+        }
+
+        .profile-box {
+            position: relative;
+        }
+
+        .profile-txt {
             font-size: 3.5rem;
             font-weight: 400;
             font-weight: 600;
             line-height: 1;
-            border-bottom: 1px solid #37474F;
-            color: #37474F;
+            border-bottom: 1px solid $main-brown;
+            color: $main-brown;
             padding-bottom: 9vh;
             display: block;
-            // font-family: $En-font;
+
+            @include mobile {
+                font-size: 6.5rem;
+            }
         }
-        .arrow{
+
+        .arrow {
             position: absolute;
             right: 0;
             bottom: calc(clamp(1.5em, 4vw, 2.5em) * 1.5);
             display: inline-block;
 
-            svg{
+            svg {
                 display: inline-block;
                 transform: rotate(90deg);
             }
         }
 
-        .btn-work{
+        .btn-work {
             position: absolute;
             display: block;
-            // width: clamp(4em, 6vw, 6em);
-            // height: clamp(4em, 6vw, 6em);
-            width: 4.5rem;
-            height: 4.5rem;
+            width: clamp(4rem, 9vw, 13rem);
+            height: clamp(4rem, 9vw, 13rem);
+            // width: 4.5rem;
+            // height: 4.5rem;
             font-size: 0.55rem;
             line-height: 0.9;
-        
+
             border-radius: 50%;
             background: #FF6F61;
             border: 0;
@@ -64,13 +77,51 @@
             bottom: -38%;
             right: 5%;
             overflow: hidden;
+
+            @include desktop {
+                width: 6rem;
+                height: 6rem;
+                font-size: 0.8rem;
+            }
+
+            @include tablet {
+                width: 7rem;
+                height: 7rem;
+                font-size: 1rem;
+            }
+
+            @include mobile {
+                width: 13rem;
+                height: 13rem;
+                font-size: 2rem;
+                bottom: -29%;
+            }
+
+            .btn-txt {
+                @include tablet {
+                    padding: 0 0.5rem;
+
+                }
+
+                @include mobile {
+                    font-size: 1.9rem;
+                }
+            }
         }
     }
-    .contact-box{
+
+    .contact-box {
         padding-top: 9vh;
 
-        .contact-desc{
-            box-shadow: inset 0px 0px 0px 1px rgb(255 255 255 / 20%);
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 0;
+        }
+
+        .contact-desc {
+            box-shadow: inset 0px 0px 0px 1px rgb(255 255 255 / 50%);
             position: relative;
             display: inline-block;
             background: transparent;
@@ -81,7 +132,16 @@
             color: #fff;
             margin-right: 0.2rem;
 
-            .btn-txt{
+            @include desktop {
+                height: 3.25rem;
+            }
+
+            @include mobile {
+                border-radius: 3.125em;
+                height: 7.25rem;
+            }
+
+            .btn-txt {
                 padding: 0 0.8rem;
                 font-size: 0.6rem;
                 position: relative;
@@ -94,10 +154,24 @@
                 width: 100%;
                 height: 100%;
                 box-sizing: border-box;
+
+                @include desktop {
+                    padding: 0 1.7rem;
+                    font-size: 0.87rem;
+                }
+
+                @include tablet {
+                    font-size: 1.2rem;
+                }
+
+                @include mobile {
+                    font-size: 1.9rem;
+                }
             }
         }
     }
-    .footer-bott{
+
+    .footer-bott {
         color: #666E72;
         display: flex;
         align-items: center;
@@ -106,10 +180,30 @@
         margin-bottom: 2vh;
         letter-spacing: -0.25px;
         font-weight: 500;
+        letter-spacing: -0.5px;
 
-        .link-box{
-            a{
-                &:first-child{margin-right: 0.2rem;}
+        @include desktop {
+            font-size: 1rem;
+        }
+
+        @include tablet {
+            font-size: 1.3rem;
+        }
+
+        @include mobile {
+            font-size: 2.1rem;
+        }
+
+        .link-box {
+            a {
+                &:first-child {
+                    margin-right: 0.2rem;
+
+                    @include desktop {
+                        margin-right: 0.5rem;
+                    }
+                }
+
             }
         }
     }

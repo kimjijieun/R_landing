@@ -18,28 +18,28 @@
 
 
     <script defer src="./asset/js/gsap.js"></script>
-    <script defer src="./asset/js/main.js"></script>
+    <!-- <script defer src="./asset/js/main.js"></script> -->
 </head>
 <body>
+    <div class="loding-page">
+        <div class="logo-text">
+            <span class="por">por</span>
+            <span class="t">t</span>
+            <span class="fo">fo</span>
+            <span class="lio">lio</span>
+        </div>
+
+        <div class="m-logo-text">
+            <span class="port">port</span>
+            <span class="folio">folio</span>
+        </div>
+
+        <div class="info-txt">
+            <span>web publisher</span>
+            <span>code by kim ji eun</span>
+        </div>
+    </div>
     <div class="wrap">
-        <!-- <div class="loding-page">
-            <div class="logo-text">
-                <span class="por">por</span>
-                <span class="t">t</span>
-                <span class="fo">fo</span>
-                <span class="lio">lio</span>
-            </div>
-
-            <div class="m-logo-text">
-                <span class="port">port</span>
-                <span class="folio">folio</span>
-            </div>
-
-            <div class="info-txt">
-                <span>web publisher</span>
-                <span>code by kim ji eun</span>
-            </div>
-        </div> -->
 
 
         <header class="header">
@@ -49,9 +49,6 @@
                 <nav class="nav-area">
                     <a href="#about" class="link-nav">About</a>
                     <a href="#work" class="link-nav">Work</a>
-                    <!-- <a href="" class="link-nav" data-target=".footer">Contact</a> -->
-                    <!-- <a href="" class="link-nav"data-target="#about">About</a>
-                    <a href="" class="link-nav"data-target="#work">Work</a> -->
                     <a href="#footer" class="link-nav btn-contact">Contact</a>
                 </nav>
             </div>
@@ -73,7 +70,7 @@
                     <ul class="menu-list">
                         <li class="menu-item"><a href="#home"><span class="num">01</span>Home</a></li>
                         <li class="menu-item"><a href="#work"><span class="num">02</span>Work</a></li>
-                        <li class="menu-item"><a href="#footer"><span class="num">03</span>Contact</a></li>
+                        <li class="menu-item btn-contact"><a href="#footer"><span class="num">03</span>Contact</a></li>
                     </ul>
                     <ul class="social-list">
                         <li class="social-item"><a href="mailto:kimjiji96@naver.com">Email</a></li>
@@ -97,60 +94,18 @@
                          <source src="./asset/videos/36589-411342338_medium.mp4" type="">
                     </video>
                 </figure>
-                <!-- <div class="animate-box">
-                    <div class="animate-name">
-                        <span>dramatic</span>
-                        <span>—</span>
-                        <span>eloquent</span>
-                        <span>—</span>
-                        <span>witty</span>
-                        <span>—</span>
-                        <span>spontaneous</span>
-                        <span>—</span>
-                        <span>enthusiastic</span>
-                        <span>—</span>
-                        <span>inquisitive</span>
-                        <span>—</span>
-                    </div>
-                    <div class="animate-name">
-                        <span>dramatic</span>
-                        <span>—</span>
-                        <span>eloquent</span>
-                        <span>—</span>
-                        <span>witty</span>
-                        <span>—</span>
-                        <span>spontaneous</span>
-                        <span>—</span>
-                        <span>enthusiastic</span>
-                        <span>—</span>
-                        <span>inquisitive</span>
-                        <span>—</span>
-                    </div>
-                </div> -->
             </section>
-            <!-- sc-work > About -->
+            <!-- About -->
             <section class="sc-about" id="about">
                 <span class="blind">설명</span>
                 <div class="work-wrap">
-                    <!-- <div class="work-box">
-                        <div class="w-top"><h2 class="work-tit">always open to learn something new, absorb it</h2></div>
-                        <div class="w-bott"><h2 class="work-tit">always open to learn something new, absorb it</h2></div>
-                        
-                    </div> -->
                     <h2 class="work-tit">always open to learn something new, absorb it</h2>
-                    <h3 class="work-desc">
-                        <!-- <span>원활한 소통을 통해 프로젝트의 완성도를 높이고</span><br>
-                        <span>웹 표준과 접근성을 고려한 마크업을 구현하고자 합니다.</span><br>
-                        <span>다양한 프레임워크와 라이브러리를 배우며 기술을 지속적으로 향상</span> <br>
-                        <span>기술을 향상시키며 사용자에게 즐거움과 </span> <br>
-                        <span>사용자에게 편의를 제공하는 열정적인 퍼블리셔가 되겠습니다.</span> <br> -->
-
-                        <span>‘기본을 지키며, 새로운 변화를 두려워하지 않고 도전하는 퍼블리셔’</span><br>
+                    <h3 class="work-tit2">‘기본을 지키며, 새로운 변화를 두려워하지 않고 도전하는 퍼블리셔’</h3>
+                    <div class="work-desc">
                         <span>시맨틱 마크업을 통해 웹 접근성, 웹 표준을 준수하여</span><br>
                         <span>매력적인 UI/UX를 위한 CSS, JS 인터렉션 기술을 향상시켜</span><br>
                         <span>꾸준히 스펙트럼을 넓히는 퍼블리셔가 되겠습니다.</span><br>
-
-                    </h3>
+                    </div>
                 </div>
                 
             </section>
@@ -162,7 +117,7 @@
                     </span>
                     <h2 class="t-title">Work</h2>
                 </div>
-                <div class="common-inner">
+                <div class="common-inner" id="work">
                     <span class="cursor">M</span>
                     <span class="cursor spell1">O</span>
                     <span class="cursor spell2">R</span>
@@ -172,27 +127,27 @@
                     <span class="cursor spell6">R</span>
                     <span class="cursor spell7">E</span>
                     
-                    <div class="project-area"  id="work">
+                    <div class="project-area">
                         <div class="title-list">
-                            <a href="" class="title-item">
+                            <a href="" class="title-item" target="_blank">
                                 <h3 class="p-title">
                                     Enterprise Blockchain
                                     <span class="title-num">1</span>
                                 </h3>
                             </a>
-                            <a href="" class="title-item">
+                            <a href="https://kimjijieun.github.io/macBook/"  class="title-item" target="_blank">
                                 <h3 class="p-title">
                                     Macbook
                                     <span class="title-num">2</span>
                                 </h3>
                             </a>
-                            <a href="" class="title-item">
+                            <a href="https://kimjijieun.github.io/BD/" class="title-item" target="_blank">
                                 <h3 class="p-title">
                                     Barcelona Design
                                     <span class="title-num">3</span>
                                 </h3>
                             </a>
-                            <a href="" class="title-item">
+                            <a href="https://kimjijieun.github.io/earthfoam/" class="title-item" target="_blank">
                                 <h3 class="p-title">
                                     Earthfoam
                                     <span class="title-num">4</span>
@@ -202,8 +157,8 @@
                         
                         <div class="project-wrap">
                             <div class="project-item">
-                                <a href="" class="video-box">
-                                    <video loop="" autoplay="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="./asset/videos/enter.mp4"></video>
+                                <a href="" class="video-box" target="_blank">
+                                    <video loop="" autoplay="" muted="" playsinline="" data-object-fit="cover"><source src="./asset/videos/enter.mp4"></video>
                                 </a>
     
                                 <div class="txt-desc">
@@ -214,11 +169,11 @@
                                     <span>ScrollTrigger</span>
                                 </div>
                                 <p class="project-desc">GSAP과 ScrollTrigger을 이용한 인터랙티브 사이트입니다. </p>
-                                <a href="" class="link-code">Code Review</a>
+                                <a href="" class="link-code" target="_blank">Code Review</a>
                             </div>
                             <div class="project-item">
-                                <a href="" class="video-box">
-                                    <video loop="" autoplay="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="./asset/videos/maxbook.mp4"></video>
+                                <a href="https://kimjijieun.github.io/macBook/" class="video-box" target="_blank">
+                                    <video loop="" autoplay="" muted="" playsinline="" data-object-fit="cover"><source src="./asset/videos/maxbook.mp4"></video>
                                 </a>
     
                                 <div class="txt-desc">
@@ -229,10 +184,10 @@
                                 </div>
                                 
                                 <p class="project-desc">코드의 재활용성과 가독성을 높인 클론사이트입니다.</p>
-                                <a href="" class="link-code">Code Review</a>
+                                <a href="" class="link-code" target="_blank">Code Review</a>
                             </div>
                             <div class="project-item">
-                                <a href=""  class="con-img-box"><img src="./asset/images/contents/Barcelona_bg.jpg.png" alt=""></a>
+                                <a href="https://kimjijieun.github.io/BD/"  class="con-img-box" target="_blank"><img src="./asset/images/contents/Barcelona_bg.jpg.png" alt=""></a>
     
                                 <div class="txt-desc">
                                     <span>#퍼블리싱100%</span>
@@ -243,10 +198,10 @@
                                 </div>
                                 
                                 <p class="project-desc">웹접근성과 마크업에 중점을 둔 반응형 웹사이트입니다.</p>
-                                <a href="" class="link-code">Code Review</a>
+                                <a href="" class="link-code" target="_blank">Code Review</a>
                             </div>
                             <div class="project-item">
-                                <a href=""  class="con-img-box"><img src="./asset/images/contents/Earthfoam.png" alt=""></a>
+                                <a href="https://kimjijieun.github.io/earthfoam/"  class="con-img-box" target="_blank"><img src="./asset/images/contents/Earthfoam.png" alt=""></a>
     
                                 <div class="txt-desc">
                                     <span>#퍼블리싱100%</span>
@@ -257,11 +212,111 @@
                                 </div>
                                 
                                 <p class="project-desc">GSAP과 ScrollTrigger를 활용한 반응형 사이트입니다.</p>
-                                <a href="" class="link-code">Code Review</a>
+                                <a href="" class="link-code" target="_blank">Code Review</a>
                             </div>
                         </div>
                     </div>
 
+                    <!-- 모바일영역 -->
+                    <div class="m-project-area">
+                        <ul class="mList">
+                            <li class="mItem">
+                                <h3 class="p-title">
+                                    <a href="" target="_blank">
+                                        Enterprise Blockchain
+                                        <span class="title-num">1</span>
+                                    </a>
+                                </h3>
+                                <div class="txt-desc">
+                                    <span>퍼블리싱100%</span>
+                                    <span>적응형</span>
+                                    <span>SCSS</span>
+                                    <span>GSAP</span>
+                                    <span>ScrollTrigger</span>
+                                </div>
+                                <div class="m-photo">
+                                    <a href="" target="_blank">
+                                        <div class="video-box item_box">
+                                            <video loop="" autoplay="" muted="" playsinline="" data-object-fit="cover" class="item"><source src="./asset/videos/enter_m.mp4"></video>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p class="project-desc">GSAP과 ScrollTrigger을 이용한 인터랙티브 사이트입니다. </p>
+                                <a href="" class="link-code" target="_blank">Code Review</a>
+                            </li>
+                            <li class="mItem">
+                                <h3 class="p-title">
+                                    <a href="https://kimjijieun.github.io/macBook/" target="_blank">
+                                        Macbook
+                                        <span class="title-num">2</span>
+                                    </a>
+                                </h3>
+                                <div class="txt-desc">
+                                    <span>#퍼블리싱100%</span>
+                                    <span>#반응형</span>
+                                    <span>#JQuery</span>
+                                    <span>#GSAP</span>
+                                </div>
+                                <div class="m-photo">
+                                    <a href="https://kimjijieun.github.io/macBook/" target="_blank">
+                                        <div class="video-box item_box">
+                                            <video loop="" autoplay="" muted="" playsinline="" data-object-fit="cover" class="item"><source src="./asset/videos/maxbook_m.mp4"></video>
+                                        </div>
+                                    </a>
+                                </div>
+                                <p class="project-desc">코드의 재활용성과 가독성을 높인 클론사이트입니다.</p>
+                                <a href="" class="link-code" target="_blank">Code Review</a>
+                            </li>
+                            <li class="mItem">
+                                <h3 class="p-title">
+                                    <a href="https://kimjijieun.github.io/BD/" target="_blank">
+                                        Barcelona Design
+                                        <span class="title-num">3</span>
+                                    </a>
+                                </h3>
+                                <div class="txt-desc">
+                                    <span>#퍼블리싱100%</span>
+                                    <span>#적응형</span>
+                                    <span>#JQuery</span>
+                                    <span>#GSAP</span>
+                                    <span>#Swiper js</span>
+                                </div>
+                                <div class="m-photo">
+                                    <a href="" target="_blank">
+                                        <div class="item_box">
+                                            <img src="./asset/images/contents/Barcelona_bg.jpg.png" alt="" class="item">
+                                        </div>
+                                    </a>
+                                </div>
+                                <p class="project-desc">웹접근성과 마크업에 중점을 둔 반응형 웹사이트입니다.</p>
+                                <a href="" class="link-code" target="_blank">Code Review</a>
+                            </li>
+                            <li class="mItem">
+                                <h3 class="p-title">
+                                    <a href="https://kimjijieun.github.io/earthfoam/" target="_blank">
+                                        Earthfoam
+                                        <span class="title-num">4</span>
+                                    </a>
+                                </h3>
+                                <div class="txt-desc">
+                                    <span>#퍼블리싱100%</span>
+                                    <span>#반응형</span>
+                                    <span>#JQuery</span>
+                                    <span>#GSAP</span>
+                                    <span>#Swiper js</span>
+                                </div>
+                                <div class="m-photo">
+                                    <a href="https://kimjijieun.github.io/earthfoam/" target="_blank">
+                                        <div class="item_box">
+                                            <img src="./asset/images/contents/Earthfoam.png" alt="" class="item">
+                                        </div>
+                                    </a>
+                                </div>
+                                <p class="project-desc">GSAP과 ScrollTrigger을 이용한 인터랙티브 사이트입니다. </p>
+                                <a href="" class="link-code" target="_blank">Code Review</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -272,15 +327,15 @@
                     </span>
                     <h2 class="t-title">sub - project</h2>
                 </div>
-                <!-- <h2>sub - project</h2> -->
+
                 <div class="common-inner">
                     <div class="project-area2">
                         <div class="project-list project-list-large">
-                            <a href="" class="project-item">
+                            <a href="https://kimjijieun.github.io/naverCareers/" class="project-item" target="_blank">
                                 <p class="txt-desc txt-desc-top">미디어쿼리를 활용한 반응형 사이트입니다.
                                 </p>
                                 <div class="item-box">
-                                    <video loop="" autoplay="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="./asset/images/contents/Bram.mp4"></video>
+                                    <video loop="" autoplay="" muted="" playsinline="" data-object-fit="cover"><source src="./asset/images/contents/Bram.mp4"></video>
                                 </div>
                                 <div class="txt-ani">
                                     <div class="txt-ani-box">
@@ -304,13 +359,19 @@
                                 <div class="txt-desc txt-desc-bott">
                                     <span>#퍼블리싱100%</span>
                                     <span>#반응형</span>
-                                    <span>#JQuery</span>
                                     <span>#Swiper js</span>
+                                    <span>#JQuery</span>
                                 </div>
+                            </a>
+                            <a href="https://velog.io/@kimjiji_0/8%EC%A3%BC%EC%B0%A8-%EC%8B%A4%EC%8A%B5-naver-career" class="ic_velog" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 192 192">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z">
+                                    </path>
+                                  </svg>
                             </a>
                         </div>
                         <div class="project-list project-list-small">
-                            <a href="" class="project-item">
+                            <a href="https://kimjijieun.github.io/kakaopage/index.html" class="project-item" target="_blank">
                                 <p class="txt-desc txt-desc-top">JSON 비동기 통신을 이용해 데이터를 바인딩해 클론코딩한 모바일 사이트입니다.
                                 </p>
                                 <div class="item-box">
@@ -340,13 +401,18 @@
                                 <div class="txt-desc txt-desc-bott">
                                     <span>#퍼블리싱100%</span>
                                     <span>#모바일</span>
-                                    <span>#JQuery</span>
-                                    <span>#Swiper js</span>
+                                    <span>#Json</span>
                                 </div>
+                            </a>
+                            <a href="https://velog.io/@kimjiji_0/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%8E%98%EC%9D%B4%EC%A7%80" class="ic_velog" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 192 192">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z">
+                                    </path>
+                                  </svg>
                             </a>
                         </div>
                         <div class="project-list project-list-small">
-                            <a href="" class="project-item">
+                            <a href="https://kimjijieun.github.io/SeoulCity/" class="project-item" target="_blank">
                                 <p class="txt-desc txt-desc-top">
                                     IR기법 사용으로 웹 접근성에 초점을 맞추고, TAB키로도 이동이 가능한 클론코딩 사이트입니다
                                 </p>
@@ -355,22 +421,20 @@
                                 </div>
                                 <div class="txt-ani">
                                     <div class="txt-ani-box">
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
+                                        <span>seoul</span>
+                                        <span>city</span>
+                                        <span>seoul</span>
+                                        <span>city</span>
+                                        <span>seoul</span>
+                                        <span>city</span>
                                     </div>
                                     <div class="txt-ani-box">
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
+                                        <span>seoul</span>
+                                        <span>city</span>
+                                        <span>seoul</span>
+                                        <span>city</span>
+                                        <span>seoul</span>
+                                        <span>city</span>
                                     </div>
                                 </div>
 
@@ -378,87 +442,61 @@
                                     <span>#퍼블리싱100%</span>
                                     <span>#적응형</span>
                                     <span>#시멘틱웹</span>
-                                    <span>#JQuery</span>
-                                    <span>#Swiper js</span>
                                 </div>
+                            </a>
+                            <a href="https://velog.io/@kimjiji_0/4%EC%A3%BC%EC%B0%A8-%EC%8B%A4%EC%8A%B5" class="ic_velog" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 192 192">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z">
+                                    </path>
+                                  </svg>
                             </a>
                         </div>
                         <div class="project-list project-list-large">
-                            <a href="" class="project-item">
+                            <a href="https://kimjijieun.github.io/Andar/" class="project-item" target="_blank">
                                 <p class="txt-desc txt-desc-top">웹 표준에 근거한 시멘틱 태그를 사용하고 코드의 재활용을 높힌 모바일사이트입니다.
                                 </p>
                                 <div class="item-box">
-                                    <video loop="" autoplay="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="./asset/videos/andar.mp4"></video>
+                                    <video loop="" autoplay="" muted="" playsinline="" data-object-fit="cover"><source src="./asset/videos/andar.mp4"></video>
                                 </div>
                                 <div class="txt-ani">
                                     <div class="txt-ani-box">
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
                                     </div>
                                     <div class="txt-ani-box">
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
-                                        <span>Naver</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
+                                        <span>andar</span>
                                     </div>
                                 </div>
 
                                 <div class="txt-desc txt-desc-bott">
                                     <span>#퍼블리싱100%</span>
                                     <span>#반응형</span>
-                                    <span>#SCSS</span>
                                     <span>#JQuery</span>
-                                    <span>#GSAP</span>
                                     <span>#Swiper js</span>
                                 </div>
+                            </a>
+                            <a href="https://velog.io/@kimjiji_0/%EC%95%88%EB%8B%A4%EB%A5%B4" class="ic_velog" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 192 192">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0H168C181.255 0 192 10.7451 192 24V168C192 181.255 181.255 192 168 192H24C10.7451 192 0 181.255 0 168V24C0 10.7451 10.7451 0 24 0ZM49 57.9199V65.48H67L80.6799 142.52L98.5 141.26C116.02 119.06 127.84 102.44 133.96 91.3999C140.2 80.24 143.32 70.9399 143.32 63.5C143.32 59.0601 142 55.7 139.36 53.4199C136.84 51.1399 133.66 50 129.82 50C122.62 50 116.62 53.0601 111.82 59.1799C116.5 62.3 119.68 64.8799 121.36 66.9199C123.16 68.8401 124.06 71.4199 124.06 74.6599C124.06 80.0601 122.44 86.1799 119.2 93.02C116.08 99.8601 112.66 105.92 108.94 111.2C106.54 114.56 103.48 118.7 99.76 123.62L88.0601 57.2C87.1001 52.3999 84.1001 50 79.0601 50C76.78 50 72.3999 50.96 65.9199 52.8799C59.4399 54.6799 53.8 56.3601 49 57.9199Z">
+                                    </path>
+                                  </svg>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 모바일 -->
-            <!-- <section class="sc-project-m">
-                <span class="blind">모바일영역</span>
-                <ul>
-                    <li class="content-group">
-                        <a href="">
-                            <div class="m-title">
-                                <p>Bal d'Afrique</p>
-                                <span class="title-num">1</span>
-                            </div>
-                            <div class="m-photo">
-                                <div class="m-img-box">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="content-group">
-                        <a href="">
-                            <div class="m-title">
-                                <p>Bal d'Afrique</p>
-                                <span class="title-num">1</span>
-                            </div>
-                            <div class="m-photo">
-                                <div class="m-img-box">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </section> -->
-
-            <!-- 현재 프로젝트? -->
             <!-- Current Work -->
             <section class="sc-ing">
                 <span class="blind">현재 회사 프로젝트</span>
@@ -474,10 +512,10 @@
 
                         <ul class="content-list">
                             <li class="content-item">
-                                <a href="" target="_blank">
+                                <a href="https://www.ajudaily.com/" target="_blank">
                                     <strong class="title"><i>(01)</i>아주일보</strong>
                                     <div class="text-box">
-                                        <p class="desc">웹접근성을 고려하여 제작한 웹 사이트입니다. (반응형 / 퍼블리싱 100%)</p>
+                                        <p class="desc">웹접근성을 고려하여 제작한 웹 사이트입니다. (반응형 / 퍼블리싱 100%) (25.01.02 오픈)</p>
                                         <div class="hash">
                                             <span>#반응형</span>
                                             <span>#PC</span>
@@ -487,7 +525,7 @@
                                 </a>
                             </li>
                             <li class="content-item">
-                                <a href="" target="_blank">
+                                <a href="https://www.lawandp.com/" target="_blank">
                                     <strong class="title"><i>(02)</i>아주로앤피</strong>
                                     <div class="text-box">
                                         <p class="desc">웹접근성과 공통 클래스명 고려하여 제작한 웹 사이트입니다. (PC, Mobile / 퍼블리싱 100%)</p>
@@ -500,7 +538,7 @@
                                 </a>
                             </li>
                             <li class="content-item">
-                                <a href="" target="_blank">
+                                <a href="https://www.ajupress.com/" target="_blank">
                                     <strong class="title"><i>(03)</i>아주프레스</strong>
                                     <div class="text-box">
                                         <p class="desc">웹접근성과 유지보수에 유리하게 제작한 웹 사이트입니다. (PC, Mobile / 퍼블리싱 100%)</p>
@@ -513,7 +551,7 @@
                                 </a>
                             </li>
                             <li class="content-item">
-                                <a href="" target="_blank">
+                                <a href="https://www.ajunews.com/" target="_blank">
                                     <strong class="title"><i>(04)</i>아주경제</strong>
                                     <div class="text-box">
                                         <p class="desc">웹접근성을 고려하여 제작한 웹 사이트입니다. (PC, Mobile / 퍼블리싱 100%)</p>
@@ -540,7 +578,7 @@
                     <h2 class="t-title">TO STUDY</h2>
                 </div>
                 <div class="slider">
-                    <ul class="slider-list" data-scroll-opacity>
+                    <ul class="slider-list">
                         <li class="slider-item">
                             <div class="slide-top">
                                 <div class="slide-img-box"> <img src="./asset/images/contents/gsap.png" alt="슬라이드 이미지"> </div>
@@ -602,9 +640,6 @@
 
                 <p class="desc">JavaScript 프레임워크, 라이브러리, CSS4와 같은 새로운 웹 기술들을 빠르게 학습하고 사용자 경험에 대한 최신 트렌드를 한발 앞서서 받아들이는 퍼블리셔가 되고자 합니다.</p>
 
-                <!-- <div class="pan-wrap">
-                    <div class="pan-box"><div class="pan"></div></div>
-                </div> -->
             </section>
         </main>
 
@@ -613,7 +648,6 @@
                 <div class="profile-wrap">
                     <div class="profile-box">
                         <div class="profile-txt">
-                            <!-- <div class="profile"></div> -->
                             <span>Let’s work</span>
                             <span>together</span>
                         </div>
