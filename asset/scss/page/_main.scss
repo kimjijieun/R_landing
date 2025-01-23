@@ -567,6 +567,9 @@
       @include desktop {
         max-height: 399.5px;
       }
+      @include tablet{
+        max-height: none;
+      }
     }
 
     .project-list-small {
@@ -727,7 +730,7 @@
         font-size: 0.9rem;
       }
 
-      @include tablet {
+      @include mobile {
         font-size: 1.4rem;
       }
     }
@@ -745,7 +748,7 @@
     margin-bottom: 2.5rem;
 
     @include mobile {
-      margin-bottom: 8rem;
+      margin-bottom: 4rem;
     }
   }
 
@@ -760,7 +763,9 @@
     }
 
     @include tablet {
-      height: 70vw;
+      // height: 70vw;
+      height: 55vw;
+
     }
 
     @include mobile {
@@ -800,11 +805,12 @@
         }
 
         @include tablet {
-          width: 63vw;
+          width: clamp(25rem, 50vw, 25rem);
         }
 
         @include mobile {
-          width: 80vw;
+          // width: 80vw;
+          width: clamp(30rem, 45vw, 32rem);
         }
 
         .slide-top {
@@ -858,11 +864,14 @@
           }
 
           @include tablet {
-            font-size: 1.2rem;
+            // font-size: 1.2rem;
+            // font-size: clamp(0.9rem, 1.5vw, 2rem);
+            font-size: clamp(1rem, 1.5vw, 2rem);
           }
 
           @include mobile {
-            font-size: 1.7rem;
+            // font-size: 1.7rem;
+            font-size: clamp(1.2rem, 1.2vw, 2rem);
           }
 
           .slide-title {
@@ -879,7 +888,8 @@
             }
 
             @include mobile {
-              font-size: 2.5rem;
+              font-size: clamp(2rem, 3vw, 3rem);
+              // font-size: 2.5rem;
             }
           }
         }
@@ -897,13 +907,14 @@
     }
 
     @include tablet {
-      font-size: 1.2rem;
-      padding-bottom: 2rem;
+      // font-size: 1.2rem;
+      font-size: clamp(0.9rem, 1.8vw, 2rem);
+      padding-bottom: 1rem;
     }
 
     @include mobile {
-      font-size: 1.9rem;
-      padding: 1rem 5vw 2rem;
+      font-size: clamp(1.2rem, 2vw, 2rem);
+      padding: 1rem 5vw 1.5rem;
     }
   }
 

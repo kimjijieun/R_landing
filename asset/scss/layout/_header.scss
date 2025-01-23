@@ -40,11 +40,12 @@
             }
 
             @include tablet {
-                font-size: 1.4rem;
+                // font-size: 1.4rem;
+                font-size: clamp(0.8rem, 4vw, 1.3rem);
             }
 
             @include mobile {
-                font-size: 2.2rem;
+                font-size: clamp(1.8rem, 4vw, 2.2rem);
             }
 
             .link-nav+.link-nav {
@@ -70,11 +71,11 @@
             }
 
             @include tablet {
-                font-size: 1.4rem;
+                font-size: clamp(0.8rem, 4vw, 1.3rem);
             }
 
             @include mobile {
-                font-size: 2.2rem;
+                font-size: clamp(1.8rem, 4vw, 2.2rem);
             }
         }
     }
@@ -102,13 +103,13 @@
         }
 
         @include tablet {
-            width: 4.3rem;
-            height: 4.3rem;
+            width: 4rem;
+            height: 4rem;
         }
 
         @include mobile {
-            width: 6.3rem;
-            height: 6.3rem;
+            width: 5.3rem;
+            height: 5.3rem;
         }
 
         &.on {
