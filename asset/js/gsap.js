@@ -110,6 +110,7 @@ $(function(){
       //     start: "center 45%",
       //     end: "60% 45%",
       //     scrub: 1,
+      //     invalidateOnRefresh: true,
       //   },
       // });
       ScrollTrigger.create({
@@ -120,6 +121,12 @@ $(function(){
             opacity:0,
           });
         },
+        onEnterBack: () => {
+          gsap.to(".m-logo-text", {
+              opacity: 1,
+          });
+      },
+        invalidateOnRefresh: true,
       });
     },
     "(min-width:768px)":function(){
@@ -185,20 +192,20 @@ $(function(){
     }
   });
 
-  ScrollTrigger.matchMedia({
-    "(max-width:767px)": function () {
-      gsap.to(".m-logo-text", {
-        opacity:0,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: ".loding-page",
-          start: "center 45%",
-          end: "60% 45%",
-          scrub: 1,
-        }
-      });
-    }
-  });
+  // ScrollTrigger.matchMedia({
+  //   "(max-width:767px)": function () {
+  //     gsap.to(".m-logo-text", {
+  //       opacity:0,
+  //       ease: "power1.inOut",
+  //       scrollTrigger: {
+  //         trigger: ".loding-page",
+  //         start: "center 45%",
+  //         end: "60% 45%",
+  //         scrub: 1,
+  //       }
+  //     });
+  //   }
+  // });
   
   
   // // 해당영역으로 이동
